@@ -5,21 +5,20 @@
  * @format
  * @flow strict-local
  */
-import 'react-native-gesture-handler';
 import React from 'react';
-import { SafeAreaView, StatusBar, StyleSheet, View } from 'react-native';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
-import  {MainStack} from './src/navigation/MainStack'
-
+import {SafeAreaView, StatusBar, StyleSheet, View} from 'react-native';
+import 'react-native-gesture-handler';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {MainStack} from './src/navigation/MainStack';
 
 const App = () => {
   return (
     <View style={{flex: 1}}>
-      <StatusBar backgroundColor={'pink'} barStyle="light-content" />
+      <StatusBar hidden backgroundColor={'pink'} barStyle="light-content" />
       <SafeAreaView style={{flex: 1, backgroundColor: 'pink'}}>
         <MainStack />
       </SafeAreaView>
-      </View>
+    </View>
   );
 };
 
