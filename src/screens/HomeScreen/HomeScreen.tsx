@@ -85,7 +85,7 @@ const HomeScreen = (props) => {
         <Animated.View style={[styles.buttonContainer, animatedStyles]}>
           <ButtonPig
             disabled={false}
-            onClick={() => navigation.navigate('Movies')}
+            onClick={() => navigation.navigate('Person')}
             containerStyle={styles.buttonUniqueContainerLeft}
             buttonStyle={styles.buttonStyle}
             text={'Seguinte'}
